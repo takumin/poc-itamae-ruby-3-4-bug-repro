@@ -7,7 +7,7 @@ $ docker run --name itamae-repro -it ubuntu:trusty
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # export GEM_HOME="$HOME/.gem"
 # export GEM_PATH="$HOME/.gem"
-# export PATH="$HOME/.gem/bin"
+# export PATH="$HOME/.gem/bin:$PATH"
 # brew install ruby
 # gem install itamae
 # itamae version
