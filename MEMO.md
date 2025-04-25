@@ -3,7 +3,7 @@
 ```console
 $ docker run --name itamae-repro -it ubuntu:trusty
 # apt update
-# apt install -y build-essential curl git bash-completion
+# apt install --no-install-recommends -y build-essential curl git bash-completion
 # CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew install ruby
 ```
