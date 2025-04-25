@@ -2,8 +2,7 @@
 
 ```console
 $ docker run --name itamae-repro -it ubuntu:trusty
-# apt update
-# apt install --no-install-recommends -y build-essential curl git bash-completion
+# apt update && apt install --no-install-recommends -y build-essential curl git bash-completion vim-tiny
 # CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # export GEM_HOME="$HOME/.gem"
