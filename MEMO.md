@@ -6,8 +6,10 @@ $ docker run --name itamae-repro -it ubuntu:trusty
 # apt install --no-install-recommends -y build-essential curl git bash-completion
 # CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# export GEM_HOME="$HOME/.gem"
+# export GEM_PATH="$HOME/.gem"
+# export PATH="$HOME/.gem/bin"
 # brew install ruby
 # gem install itamae
-# export "PATH=/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.4.0/bin:$PATH"
 # itamae version
 ```
