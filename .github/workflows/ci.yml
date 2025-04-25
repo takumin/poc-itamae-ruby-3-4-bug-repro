@@ -2,6 +2,12 @@
 name: CI
 on:
   push:
+    paths:
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'Rakefile'
+    - '**.rb'
+  workflow_dispatch:
 permissions: {}
 jobs:
   ci:
