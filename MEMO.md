@@ -5,5 +5,6 @@ $ docker run --name itamae-repro -it ubuntu:trusty
 # apt update
 # apt install --no-install-recommends -y build-essential curl git bash-completion
 # CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # brew install ruby
 ```
