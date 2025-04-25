@@ -1,0 +1,27 @@
+---
+name: CI
+on:
+  push:
+permissions: {}
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby:
+        - "3.3"
+        - "3.4"
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: true
+    - run: bundle config set bin '.bin'
+    - run: bundle config set path '.bundle'
+    - run: bundle install
+    - run: bundle exec rake
