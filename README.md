@@ -1,8 +1,8 @@
 # poc-itamae-ruby-3-4-bug-repro
 
-[github.com/itamae-kitchen#297](https://github.com/itamae-kitchen/itamae/pull/297) causes CI to fail only in Ruby 3.4.
+Bug where time could not be handled correctly in a Docker environment with Ruby 3.4
 
-This repository is for verifying the above bug.
+see also: https://github.com/itamae-kitchen/itamae/issues/377
 
 ## Environment
 
@@ -138,3 +138,5 @@ end
 - [x] Porting the itamae repository
 - [x] Extract only the part where the error occurs
 - [x] Minimal repro code
+  - https://github.com/takumin/poc-itamae-ruby-3-4-bug-repro/tree/171c906372fc03f4a39a9f3a291a63459ee0a933
+- [ ] Install Ruby 3.4 and Itamae in a Docker environment and test to see if the issue can be reproduced.
