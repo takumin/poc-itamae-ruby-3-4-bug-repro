@@ -139,4 +139,5 @@ end
 - [x] Extract only the part where the error occurs
 - [x] Minimal repro code
   - https://github.com/takumin/poc-itamae-ruby-3-4-bug-repro/tree/171c906372fc03f4a39a9f3a291a63459ee0a933
-- [ ] Install Ruby 3.4 and Itamae in a Docker environment and test to see if the issue can be reproduced.
+- [ ] Identify the root cause of the problem
+  - [Miscellaneous notes](MEMO.md)
