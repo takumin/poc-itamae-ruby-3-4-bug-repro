@@ -7,7 +7,7 @@ GEM
     docker-api (2.4.0)
       excon (>= 0.64.0)
       multi_json
-    excon (1.2.5)
+    excon (1.5.0)
       logger
     hashie (5.0.0)
     itamae (1.14.1)
